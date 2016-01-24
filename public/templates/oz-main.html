@@ -1,0 +1,43 @@
+<!-- oz-main.html -->
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <h1> OZ Controller </h1>
+        </div>
+        <div class="col-sm-6">
+            <md-button ng-click="registerMaster()" class="md-primary md-raised">Master</md-button>
+            <md-button ng-click="registerParticipant()" class="md-raised">Participant</md-button>
+            <md-button ng-click="initialize()" class="md-accent md-raised">Initialize</md-button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <md-input-container>
+              <label>Title</label>
+              <input ng-model="name" ng-keydown="keyChange($event)">
+            </md-input-container>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <p class="lead">작동 Manual</p>
+            <p> 왼쪽 키 / 오른쪽 키 : 리듬 생성 </p>
+            <p>누른 키 : {{key_name}}</p>
+        </div>
+
+        <div class="col-sm-6">
+            <p class="lead">참여자 리스트</p>
+            <div>
+                <md-checkbox ng-repeat="user in user_list" ng-model="user.checkbox" ng-click="changeBox(user.name, !user.checkbox)" aria-label="{{user.name}}">
+                    {{user.name}} &nbsp; Sync : {{user.checkbox}}
+                </md-checkbox>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+

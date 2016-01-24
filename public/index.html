@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="StarterApp">
+    <head>
+        <title>동행</title>
+        <meta name="viewport" content="initial-scale=1" />
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+        <link href="stylesheets/style.css" rel="stylesheet">
+
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+
+        <!-- ionic/angularjs js -->
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+        <!--socket io client library-->
+        <script src="/socket.io/socket.io.js"></script>
+
+        <!-- Other Libraries-->
+        <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+        <script src="lib/angular-socket-io/socket.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+
+        <!-- your app's js -->
+        <script src="javascripts/app.js"></script>
+        <script src="javascripts/controller.js"></script>
+        <script src="javascripts/service.js"></script>
+    </head>
+    <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">GestureSync Oz</a>
+        </div>
+      </div>
+    </nav>
+     <!-- inject our views using ng-view -->
+     <!-- each angular controller applies a different class here -->
+    <div ng-view></div>
+
+    </body>
+</html>
