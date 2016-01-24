@@ -233,7 +233,7 @@ stdin.addListener("data", function(d) {
         }
     }
 
-    console.log('\n\n');
+    console.log('\n\ncommand list\n1. setCode 2. setParticipation 3. setComments 4. showCode 5. showStatic 6. showOverall 7. initGame\n');
 });
 
 function setCurrentCode(data) {
